@@ -1,4 +1,4 @@
-SASadvanced
-===========
+Discrete Probability Distributions
+==================================
 
-Advanced SAS
+Binomial and Poisson probability distributions

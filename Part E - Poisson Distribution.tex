@@ -30,14 +30,23 @@ A discrete random variable that is often used is one which estimates the number 
 If the following two properties are satisfied, the number of occurrences is a random variable described by the Poisson probability distribution
 %======================================================================================= %
 
-\textbf{Properties}\\
-1)      The probability of an occurrence is the same for any two intervals of equal length.\\
-2)      The occurrence or non-occurrence in any interval is independent of the occurrence or non-occurrence in any other interval.\\
+\noindent \textbf{Properties}
+\begin{itemize}
+\item[(1)]      The probability of an occurrence is the same for any two intervals of equal length.\\
+\item[(2)]     The occurrence or non-occurrence in any interval is independent of the occurrence or non-occurrence in any other interval.
+\end{itemize}
 
 %======================================================================================= %
 
-
+\newpage
 \section{Poisson Formulae}
+
+Here the Poisson Mean is the expected number of occurence per unit period. It is usually denoted as either $m$ or $\lambda$
+
+
+\[ P(X=k) = \frac{m^^ \times e^{-m}  \lambda }{k!}  \]
+
+
 	Given that there is on average 2 occurrences per hour, what is the probability of no occurrences in the next hour? \\ i.e. Compute $P(X=0)$ given that $m=2$
 	\Large
 	\[ P(X = 0)=\frac{2^0 e^{-2}}{0!} \]

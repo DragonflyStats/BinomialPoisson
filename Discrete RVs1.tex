@@ -1,0 +1,281 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{graphics}
+
+\begin{document}
+
+\begin{frame}
+\Huge
+\[ \mbox{Statistics and Probability} \]
+\LARGE
+\[ \mbox{Discrete Random Variables} \]
+\bigskip
+\Large
+\[ \mbox{www.Stats-Lab.com} \]
+\[ \mbox{Twitter: @StatsLabDublin} \]
+\bigskip
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-0.5cm}
+\textbf{Given:}\\
+Suppose $X$ is a random variable with 
+\begin{itemize}
+\item $E(X^2)=3.6$
+\item $P(X=2)=0.6$
+\item $P(X=3)=0.1$
+\end{itemize}
+
+
+\textbf{Questions:}
+\begin{itemize}
+\item[(a)] The random variable takes just one other value besides 2 and 3. This value is greater than 0. What is this value?\\
+\item[(b)] What is the variance of $X$?
+\end{itemize}
+\end{frame}
+%-------------------------------------------------------------%
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\textbf{Part a}
+\begin{itemize}
+\item Determine the missing value (let's call it $k$).\\
+\item First we determine the probability of that value. 
+\item We know that $E(X^2)=3.6$. Let use the approach for computing $E(X^2)$.
+
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_i$ & \phantom{sp}2\phantom{sp} & \phantom{sp}3\phantom{sp} & \phantom{sp}k\phantom{sp} \\ \hline
+$x^2_i$ & 4 & 9 & $k^2$ \\ \hline
+$p(x_i)$ & 0.6 &  0.1 &  \\ \hline 
+\end{tabular}
+\end{center}
+\end{frame}
+%-------------------------------------------------------------%
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\textbf{Part a}
+\begin{itemize}
+\item Determine the missing value (let's call it $k$).\\
+\item First we determine the probability of that value. 
+\item We know that $E(X^2)=3.6$. Let use the approach for computing $E(X^2)$.
+
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_i$ & \phantom{sp}2\phantom{sp} & \phantom{sp}3\phantom{sp} & \phantom{sp}k\phantom{sp} \\ \hline
+$x^2_i$ & 4 & 9 & $k^2$ \\ \hline
+$p(x_i)$ & 0.6 &  0.1 & \alert{0.3} \\ \hline 
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-2cm}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_i$ & \phantom{sp}2\phantom{sp} & \phantom{sp}3\phantom{sp} & \phantom{sp}k\phantom{sp} \\ \hline
+$x^2_i$ & 4 & 9 & $k^2$ \\ \hline
+$p(x_i)$ & 0.6 &  0.1 & 0.3 \\ \hline 
+\end{tabular}
+\end{center}
+
+
+
+\[ E(X^2) =  \sum  x^2_i \cdot p(x_i)  = 3.6 \]
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-2cm}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_i$ & \phantom{sp}2\phantom{sp} & \phantom{sp}3\phantom{sp} & \phantom{sp}k\phantom{sp} \\ \hline
+$x^2_i$ & 4 & 9 & $k^2$ \\ \hline
+$p(x_i)$ & 0.6 &  0.1 & 0.3 \\ \hline 
+\end{tabular}
+\end{center}
+
+
+
+\[ E(X^2) =  \sum  x^2_i \cdot p(x_i)  = 3.6 \]
+
+\[(4 \times 0.6) + (9\times 0.1) + (k^2\times 0.3) = 3.6 \]
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-2cm}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_i$ & \phantom{sp}2\phantom{sp} & \phantom{sp}3\phantom{sp} & \phantom{sp}k\phantom{sp} \\ \hline
+$x^2_i$ & 4 & 9 & $k^2$ \\ \hline
+$p(x_i)$ & 0.6 &  0.1 & 0.3 \\ \hline 
+\end{tabular}
+\end{center}
+
+
+
+\[ E(X^2) =  \sum  x^2_i \cdot p(x_i)  = 3.6 \]
+
+\[(4 \times 0.6) + (9\times 0.1) + (k^2\times 0.3) = 3.6 \]
+
+\[2.4 + 0.9 + (k^2\times 0.3) = 3.6 \]
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-2cm}
+\[(4 \times 0.6) + (9\times 0.1) + (k^2\times 0.3) = 3.6 \]
+
+\[2.4 + 0.9 + (k^2\times 0.3) = 3.6 \]
+
+\[ 3.3 + 0.3k^2 = 3.6\]
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-1.8cm}
+\[(4 \times 0.6) + (9\times 0.1) + (k^2\times 0.3) = 3.6 \]
+
+\[2.4 + 0.9 + (k^2\times 0.3) = 3.6 \]
+
+\[ 3.3 + 0.3k^2 = 3.6\]
+
+\[0.3k^2 =0.3\]
+
+\end{frame}
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-1.5cm}
+\[(4 \times 0.6) + (9\times 0.1) + (k^2\times 0.3) = 3.6 \]
+
+\[2.4 + 0.9 + (k^2\times 0.3) = 3.6 \]
+
+\[ 3.3 + 0.3k^2 = 3.6\]
+
+\[0.3k^2 =0.3\]
+\begin{center}
+$k^2 = 1$  \qquad Therefore $k=1$
+\end{center}
+\end{frame}
+%-------------------------------------------------------------%
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-2cm}
+\textbf{Part b}\\
+Compute the variance of $X$
+
+\[ \mbox{Var}(x) = E(X^2) - \{E(X)\}^2 \]
+
+
+\begin{itemize}
+\item We already know $E(X^2) =3.6$
+\item Need to compute $E(X)$.
+\end{itemize}
+\end{frame}
+%-------------------------------------------------------------%
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-2cm}
+\textbf{Computing $E(X)$}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_i$ & 2 & 3 & 1 \\ \hline 
+$p(x_i)$ & 0.6 &  0.1 & 0.3 \\ \hline
+\end{tabular}
+\end{center}
+
+\[ E(X) =  \sum  x_i \cdot p(x_i)   \]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-1cm}
+
+\textbf{Computing $E(X)$}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+$x_i$ & 2 & 3 & 1 \\ \hline 
+$p(x_i)$ & 0.6 &  0.1 & 0.3 \\ \hline
+\end{tabular}
+\end{center}
+\[ E(X) =  \sum  x_i \cdot p(x_i)   \]
+
+
+\[E(X) = (2\times 0.6) + (3 \times 0.1) + (1 \times 0.3) = 1.8 \]
+
+
+\end{frame}
+%-------------------------------------------------------------%
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-2cm}
+\textbf{Part b}\\
+Compute the variance of $X$
+
+\[ \mbox{Var}(x) = E(X^2) - \{E(X)\}^2 \]
+
+\[ \mbox{Var}(x) = 3.6 - \{1.8\}^2 \]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Discrete Random Variables}
+\Large
+\vspace{-1.5cm}
+\textbf{Part b}\\
+Compute the variance of $X$
+
+\[ \mbox{Var}(x) = E(X^2) - \{E(X)\}^2 \]
+
+\[ \mbox{Var}(x) = 3.6 - \{1.8\}^2 \]
+
+\[ \mbox{Var}(x) = 3.6 - 3.24  = \boldsymbol{0.36} \]
+\end{frame}
+
+
+
+\end{document}

@@ -1,4 +1,4 @@
-Discrete Probability Distributions
+Fallacy Of the Bland-Altman Plot
 ==================================
 
-Binomial and Poisson probability distributions
+26th October 2017 @ Zalando Tech, Dublin

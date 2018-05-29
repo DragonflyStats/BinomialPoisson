@@ -1,6 +1,4 @@
-Fallacy Of the Bland-Altman Plot
+Forestry
 ==================================
 
-26th October 2017 @ Zalando Tech, Dublin
-
-Move to PyData Talks Folder
+Orfeo Workshop June 2018

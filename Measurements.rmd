@@ -1,5 +1,18 @@
 
+For the purposes of proper comparison, the analysis of other key variables must be carried out.
 
+In addition to the pair of measurements, other variables are present in the Dual Sample Data Set. These variables do not directly impact on ovality measurements.
+
+Calendar Data is present, but not included in this analysis.
+
+1. Length 
+2. Size Class
+
+A crosstabulation is presented here.
+
+
+
+There are XXX cases in the Dual Sample, and YYY cases in the Historic Sample.
 
 
 

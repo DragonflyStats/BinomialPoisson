@@ -1,0 +1,26 @@
+We certify that we get the same set of estimates from the data, as presented to us by the third party.
+
+### Code Segment 1
+```{r}
+# 1. Load Packages
+
+library(dplyr)
+library(tidyr)
+library(magrittr)
+library(readr)
+
+```
+### Code Segment 2
+```{r}
+
+# Import the data, and perform a meta-analysis.
+
+
+```
+
+### Code Segment 3
+
+In this segment, we carry out the calculation to compute ovality
+```{r}
+
+```

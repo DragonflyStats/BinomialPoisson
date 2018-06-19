@@ -4,7 +4,7 @@ Normalized Difference Vegetation Index (NDVI)
 The normalized difference vegetation index (NDVI) is a simple graphical indicator that can be used to analyze remote sensing measurements, typically, but not necessarily, from a space platform, and assess whether the target being observed contains live green vegetation or not.
 
 
-The NDVI is calculated from these individual measurements as follows: ***NDVI = ( NIR − Red ) / ( NIR + Red ) ***
+The NDVI is calculated from these individual measurements as follows: ***NDVI = ( NIR − Red ) / ( NIR + Red )***
 where red and NIR stand for the spectral reflectance measurements
 spectral band individually, hence they take on values between 0.0 and 1.0.
 spectral band individually, hence they take on values between 0.0 and 1.0.
@@ -17,11 +17,7 @@ Lastly, low, positive values represent shrub and grassland (approximately 0.2 to
 
 
 
-
-where red and NIR stand for the spectral reflectance measurements
-acquired in the red (visible) and near-infrared regions, respectively.[6] These spectral reflectances
-are themselves ratios of the reflected over the incoming radiation in each
-spectral band individually, hence they take on values between 0.0 and 1.0. By
+By
 design, the NDVI itself thus varies between -1.0 and +1.0. It should be noted
 that NDVI is functionally, but not linearly, equivalent to the simple
 infrared/red ratio (NIR/VIS). 
@@ -32,7 +28,9 @@ ratio is therefore generally limited to any possible linearity of its
 functional relationship with vegetation properties (e.g. biomass). The simple
 ratio (unlike NDVI) is always positive, which may have practical advantages,
 but it also has a mathematically infinite range (0 to infinity), which can be a
-practical disadvantage as compared to NDVI. Also in this regard, note that the
+practical disadvantage as compared to NDVI. 
+
+Also in this regard, note that the
 VIS term in the numerator of NDVI only scales the result, thereby creating
 negative values. NDVI is functionally and linearly equivalent to the
 ratio NIR / (NIR+VIS), which ranges from 0 to 1 and is thus never negative nor

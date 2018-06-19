@@ -1,19 +1,20 @@
-NDVI
-========================
+Normalized Difference Vegetation Index (NDVI)
+==================================================
 
-The normalized difference vegetation index (NDVI) is a simple graphical indicator that can be used to analyze remote sensing measurements, typically, but not
-necessarily, from a space platform, and assess whether the target being observed contains live green vegetation or not.
-
+The normalized difference vegetation index (NDVI) is a simple graphical indicator that can be used to analyze remote sensing measurements, typically, but not necessarily, from a space platform, and assess whether the target being observed contains live green vegetation or not.
 
 
+The NDVI is calculated from these individual measurements as follows: ***NDVI = ( NIR − Red ) / ( NIR + Red ) ***
+where red and NIR stand for the spectral reflectance measurements
+spectral band individually, hence they take on values between 0.0 and 1.0.
+spectral band individually, hence they take on values between 0.0 and 1.0.
+spectral band individually, hence they take on values between 0.0 and 1.0.
+
+### Interpreting NDVI
 Negative values of NDVI (values approaching -1) correspond to water.
-Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow. Lastly, low, positive values represent shrub and grassland
-(approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1).[1]
+Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow. 
+Lastly, low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1).
 
-The NDVI is calculated from these individual measurements as follows:
-
-$$ NDVI = ( NIR − Red ) ( NIR + Red ) {\displaystyle {\mbox{NDVI}}={\frac
-{({\mbox{NIR}}-{\mbox{Red}})}{({\mbox{NIR}}+{\mbox{Red}})}}} $$
 
 
 

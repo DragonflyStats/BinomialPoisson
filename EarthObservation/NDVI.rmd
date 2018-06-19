@@ -25,6 +25,7 @@ design, the NDVI itself thus varies between -1.0 and +1.0. It should be noted
 that NDVI is functionally, but not linearly, equivalent to the simple
 infrared/red ratio (NIR/VIS). 
 
+
 The advantage of NDVI over a simple infrared/red
 ratio is therefore generally limited to any possible linearity of its
 functional relationship with vegetation properties (e.g. biomass). The simple

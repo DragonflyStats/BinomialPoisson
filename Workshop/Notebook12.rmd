@@ -1,0 +1,12 @@
+Classification using machine learning approaches: 
+
+discriminant analysis & logistic regression 
+
+Felipe Bravo
+
+```{r,include = FALSE}
+
+library(dplyr)
+library(magrittr)
+library(randomForest)
+```

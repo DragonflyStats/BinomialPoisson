@@ -1,0 +1,46 @@
+LiDAR: ALS & TLS 
+========================
+Adrián Pascual & Sara Uzquiano
+
+
+Light Detection and Ranging (LiDAR) is a proven approach to creating fast and accurate terrain models for applications in many types of industries.
+The technology is based on a scanning laser combined with both GPS and inertial technology to create a three dimensional set of points 
+(point cloud).
+
+ALS/LiDAR is an active remote
+
+
+sensing technology that measures
+
+
+distance with reflected laser light.
+
+
+•LiDAR: LIght Detection and Ranging or
+
+
+Laser Imaging Detection and Ranging)
+
+
+• 1st developed in 1960 by Hughes
+
+
+Aircraft inc.
+
+
+• Modern computers and DGPS make
+
+
+it practical.
+
+
+• Typically used in very accurate
+
+
+mapping of topography.
+
+
+• New technologies and applications
+
+
+are currently being developed.

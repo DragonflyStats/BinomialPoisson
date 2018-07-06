@@ -1,0 +1,5 @@
+Forest Stand Dynamics as basis for modelling; 
+============================================================
+*** Forest Dynamic (growth,yield & related features) modelling ***
+Felipe Bravo
+

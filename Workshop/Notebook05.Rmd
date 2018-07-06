@@ -1,0 +1,4 @@
+Data base definition and management (Open & Linked Data)
+=======================================
+
+*** Guillermo Gorgoso & Juan Ignacio Asensio ***

@@ -1,0 +1,25 @@
+Remotely Piloted Aircraft Systems (RPAS) 
+=================================================
+José Martínez Rubio
+
+Company: Geobit
+
+#### Drones
+
+* DroidWorks VM X4
+* Mikrokopter MK8 Hexacopter
+* DJI Phnatom 4 - Advanced
+
+#### Pros and Cons of RPAS
+
+* less reliability
+* Lower Bad Weather Conditions
+* Worse Quality of on-board sensors
+
+* discrete
+* Easy Deployment
+* Low Altitude Flight
+* Low Risk for Humans
+ 
+### Forest Analysis
+* Combined operation with TLS

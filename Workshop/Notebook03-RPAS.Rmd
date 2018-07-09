@@ -39,3 +39,19 @@ GSD is also referred to as ground-projected sample interval (GSI) or ground-proj
 * Boundaries and Void Areas
 * Follow Terrain
 * VLOS BVLOS (Visual Line of Sight v Beyond Visual Line of Sight) Regulation on Drone Piloting
+
+
+### GCPs: Ground Control Points
+
+Ground Control Points, or GCPs, are marked points on the ground that have a known geographic location. In aerial surveying, a drone can be used to autonomously collect photos of the survey area. If used, GCPs must be visible in these aerial photos. The photos are then processed in the cloud using drone mapping software.
+
+
+GeoReference
+
+### 3D data production
+* Textured Models
+* Ortho Images
+* RGB Dense Cloud (unclassified)
+* 2.5D surface model out of dense point cloud
+
+Semi-Automated Tree Height Extraction

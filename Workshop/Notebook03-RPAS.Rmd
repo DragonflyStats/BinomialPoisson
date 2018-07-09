@@ -1,3 +1,4 @@
+
 Remotely Piloted Aircraft Systems (RPAS) 
 =================================================
 José Martínez Rubio
@@ -16,10 +17,25 @@ Company: Geobit
 * Lower Bad Weather Conditions
 * Worse Quality of on-board sensors
 
-* discrete
+* Discrete
 * Easy Deployment
 * Low Altitude Flight
 * Low Risk for Humans
  
 ### Forest Analysis
 * Combined operation with TLS
+
+
+#### Ground Sample Distance (GSD)
+In remote sensing, ground sample distance (GSD) in a digital photo (such as an orthophoto) of the ground from air or space is the distance between pixel centers measured on the ground. For example, in an image with a one-meter GSD, adjacent pixels image locations are 1 meter apart on the ground. GSD is a measure of one limitation to image resolution, that is, the limitation due to sampling.
+GSD is also referred to as ground-projected sample interval (GSI) or ground-projected instantaneous field of view (GIFOV).
+
+
+#### Mission Planning
+* GSD
+* Altitude AGL
+* Front Side Overlap
+* Flight Pattern and Orientation
+* Boundaries and Void Areas
+* Follow Terrain
+* VLOS BVLOS (Visual Line of Sight v Beyond Visual Line of Sight) Regulation on Drone Piloting

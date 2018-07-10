@@ -1,7 +1,3 @@
-Data sharing and reuse (formal & ethical
-
-
-aspects) + IEFC data platform Christophe
-
-
-Orazio
+Data sharing and reuse (formal & ethical aspects) + IEFC data platform
+====================================
+Christophe Orazio

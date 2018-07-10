@@ -1,4 +1,36 @@
-Data base definition and management (Open & Linked Data)
-=======================================
+Linked Open Data in Forestry
+==============================
 
-*** Guillermo Gorgoso & Juan Ignacio Asensio ***
+Guillermo Vega-Gorgojo
+
+
+1. Linked Open Data
+2. Semantic Data and Ontologies
+3. Consuming Linked Open Data
+4. Linked Open Data in Forestry
+
+### Semantic Web
+The Semantic Web is an extension of the World Wide Web through standards by the World Wide Web Consortium. The standards promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework. 
+
+### Linked Data
+In computing, linked data is a method of publishing structured data so that it can be interlinked and become more useful through semantic queries. It builds upon standard Web technologies such as HTTP, RDF and URIs, but rather than using them to serve web pages for human readers, it extends them to share information in a way that can be read automatically by computers. 
+
+
+### What is RDF
+RDF, the Resource Description Framework, is one of the key ingredients of Linked Data, and provides a generic 
+graph-based data model for describing things, including their relationships with other things. RDF data can be written 
+down in a number of different ways, known as serialisations. Examples of RDF serialisations include RDF/XML, Notation-3 
+(N3), Turtle, N-Triples, RDFa, and RDF/JSON.
+
+### SPARQL
+SPARQL is an RDF query language, that is, a semantic query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format. It was made a standard by the RDF Data Access Working Group of the World Wide Web Consortium, and is recognized as one of the key technologies of the semantic web.
+
+### DBpedia
+DBpedia is a project aiming to extract structured content from the information created in the Wikipedia project. This structured information is made available on the World Wide Web. DBpedia allows users to semantically query relationships and properties of Wikipedia resources, including links to other related datasets. Tim Berners-Lee described DBpedia as one of the most famous parts of the decentralized Linked Data effort.
+
+### wikidata
+Info: www.wikidata.org
+
+
+### Four Principles for Publishing LinkedOpen Data
+* Berners Lee 2006

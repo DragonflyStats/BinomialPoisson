@@ -64,3 +64,14 @@ It is used to make sense of unorganized information, and manages commonality and
 ### Web Ontology Language (OWL)
 The Web Ontology Language (OWL) is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects. Ontologies resemble class hierarchies in object-oriented programming but there are several critical differences. Class hierarchies are meant to represent structures used in source code that evolve fairly slowly (typically monthly revisions) whereas ontologies are meant to represent information on the Internet and are expected to be evolving almost constantly. 
 
+
+Elements of a SPARQL Query
+
+Prefix Declaration : to abbreviate URIs
+Select Clause : with the information to return
+Query Pattern : What to query
+Query Modifiers : slicing, ordering
+
+Query Pattersn
+
+Variables start with an ? and can match any resource in the RDF data base ``?subclass"

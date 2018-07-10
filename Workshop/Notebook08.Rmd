@@ -1,5 +1,99 @@
 Forest Stand Dynamics as basis for modelling; 
 ============================================================
-*** Forest Dynamic (growth,yield & related features) modelling ***
+***Forest Dynamic (growth,yield & related features) modelling ***
 Felipe Bravo
+
+Forest Stand Dynamics as Basis for Modelling
+===================================================
+
+Forest dynamics describes the underlying physical and biological forces that shape and change a forest ecosystem. 
+The continuous state of change in forests can be summarized with two basic elements: disturbance and succession.
+
+#### Tree size and tree form
+* Alometry
+* Size-density relations
+
+
+#### Forest systems dynamics
+* Demography
+* Gowth
+* Niche ocupation
+* Sucession
+
+
+
+#### Ecosystem Services
+* Timber and non timber products
+* Biodiversity
+* Carbon
+
+
+#### Relevant events (risk, damages,..)
+* Fires (occurence, propagation,...)
+* Erosion processes
+* Pest and diseases
+
+#### Allometry
+Allometry is the study of the relationship of body size to shape, anatomy, physiology and finally behaviour, first outlined by Otto Snell in
+ 1892, by D'Arcy Thompson in 1917 in On Growth and Form and by Julian Huxley in 1932.
+
+#### Oliver and Larson Model
+* Stand initiation
+* Stem exclusion
+* Understory reinitiation
+* Old growth
+
+#### Stand Initiation
+New individuals and species continue to appear for several years following a disturbance. 
+Stands are young and can be quite dense. A stand initiating disturbance marks the beginning of this 
+stage, while canopy closure marks the end (Oliver and Larson 1996).
+
+#### Key Structures
+Adapted from Franklin et al. (2002)
+* Live trees
+* 100% live crown ratios
+* Debris or slash
+* Legacy trees (live or dead)
+
+#### Key Processes
+Adapted from Franklin et al. (2002)
+* Stand initiating disturbance(s)
+* Establishment of new cohort 
+ - Colonization by new seed
+ - Germination from seed bank
+* Minimal or no nutrient limitations
+* Rapid growth
+
+
+#### Stem Exclusion
+After several years (3 to 50, depending on location and species), new individuals stop 
+appearing and already established individuals begin to die. Those that survive grow and
+begin to manifest differences in height and diameter. Species may dominate the site for 
+a time before another species takes over. Stands are very dense, and still relatively 
+young (Oliver and Larson 1996). 
+
+Canopy closure marks the onset of this stage, while density independent mortality, gap formation, and significant development of new vegetation in the 
+understory signals the end. Both stand initiation and stem exclusion phases may be described
+as ‘early successional’ since they occur early in succession.
+
+#### Key Structures
+Adapted from Franklin et al. (2002)
+
+* Less than 100% live crown ratios
+* Vertically differentiated canopy
+* Heavily shaded understory
+
+#### Key Processes
+Adapted from Franklin et al. (2002)
+
+* Canopy closure
+* Density DEPENDENT mortality
+* Competitive exclusion of understory
+* Crown differentiation
+* Lower canopy tree loss
+* Self pruning
+* Nutrient limitations develop
+
+
+
 

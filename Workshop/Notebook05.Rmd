@@ -75,3 +75,57 @@ Query Modifiers : slicing, ordering
 Query Pattersn
 
 Variables start with an ? and can match any resource in the RDF data base ``?subclass"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+select distinct ?indiv where {
+?indiv a dbo:Plant . 
+} 
+LIMIT 100
+
+
+Find the properties and values of the individual dbr:Pinus_cembra
+</code></pre>
+<pre><code>
+PREFIX dbr: <http://dbpedia.org/resource/> 
+select distinct ?p ?o where {
+dbr:Pinus_cembra ?p ?o . 
+}
+LIMIT 100
+
+
+</code></pre>
+<pre><code>
+Find the family, binomial authority (and his nationality) of individual dbr:Pinus_cembra
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbr: <http://dbpedia.org/resource/> 
+select distinct ?fam ?auth ?nat where {
+dbr:Pinus_cembra dbo:family ?fam . 
+dbr:Pinus_cembra dbo:binomialAuthority ?auth . ?auth dbo:nationality ?nat . }
+LIMIT 100
+</code></pre>
+<pre><code>
+PREFIX dbr: <http://dbpedia.org/resource/> 
+select distinct ?p ?o where {
+dbr:Black_Forest ?p ?o . }
+
+
+</code></pre>
+<pre><code>
+PREFIX dbr: <http://dbpedia.org/resource/> 
+select distinct ?p ?o where {
+dbr:Pistachio ?p ?o . }
+
+</code></pre>
+<pre><code>
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbr: <http://dbpedia.org/resource/> 
+select distinct ?auth where {
+dbr:Pistachio dbo:binomialAuthority ?auth .  
+}
+
+########################################
+LIMIT 100
+
+#########################################

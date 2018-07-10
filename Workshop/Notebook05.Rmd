@@ -34,3 +34,33 @@ Info: www.wikidata.org
 
 ### Four Principles for Publishing LinkedOpen Data
 * Berners Lee 2006
+
+
+A relation between two resources
+Subject-Predicate-Object
+
+``dbr:Pinus_nigra rdfs:label "pinus nigra"``
+
+
+###  RDF Graph
+
+Can be visualized as a node and directed-arc diagram
+
+* ``dbr:Pinus_nigra rdfs:label "Pinus nigra"``
+
+
+### Turtle
+
+Terse RDF Triple Language (Turtle) is a syntax and file format for expressing data in the Resource Description Framework (RDF) data model. Turtle syntax is similar to that of SPARQL, an RDF query language. 
+RDF represents information using semantic triples, which comprise a subject, predicate, and object. Each item in the triple is expressed as a Web URI. Turtle provides a way to group three URIs to make a triple, and provides ways to abbreviate such information, for example by factoring out common portions of URIs. For example: 
+ <http://example.org/person/Mark_Twain>
+    <http://example.org/relation/author>
+    <http://example.org/books/Huckleberry_Finn> .
+
+### Ontology
+An Ontology is a shared conceptualization of a domain.
+It is used to make sense of unorganized information, and manages commonality and variability.
+
+### Web Ontology Language (OWL)
+The Web Ontology Language (OWL) is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects. Ontologies resemble class hierarchies in object-oriented programming but there are several critical differences. Class hierarchies are meant to represent structures used in source code that evolve fairly slowly (typically monthly revisions) whereas ontologies are meant to represent information on the Internet and are expected to be evolving almost constantly. 
+

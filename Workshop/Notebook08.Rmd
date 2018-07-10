@@ -1,10 +1,7 @@
-Forest Stand Dynamics as basis for modelling; 
-============================================================
-***Forest Dynamic (growth,yield & related features) modelling ***
-Felipe Bravo
-
 Forest Stand Dynamics as Basis for Modelling
 ===================================================
+***Forest Dynamic (growth,yield & related features) modelling***
+Felipe Bravo
 
 Forest dynamics describes the underlying physical and biological forces that shape and change a forest ecosystem. 
 The continuous state of change in forests can be summarized with two basic elements: disturbance and succession.

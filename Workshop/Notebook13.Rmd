@@ -1,3 +1,8 @@
-Site index curve development
+Site Index Curve Development
 ======================================
 ***Andrés Bravo-Oviedo***
+
+Site index is a tool to determine the relative productivity of a particular site or location. Site index is the height of a "free to grow" tree of a given species at a base age on the site of interest. 
+Common base ages include 25, 50, and 100, depending on the lifespan and common management practices for that species.
+
+Site index curves can be used to estimate relative site quality from the average age and average total height of dominant and codominant trees on a particular site. Each tree species has its own set of site index curves.

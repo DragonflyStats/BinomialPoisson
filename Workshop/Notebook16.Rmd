@@ -1,7 +1,3 @@
-Using forest models in linear
-
-
-programming optimization
-
-
-Fernado Pérez
+Using Forest Models in Linear Programming Optimization
+===========================================================
+***Fernado Pérez***

@@ -1,16 +1,17 @@
-Forest models validation and
+Forest Models Validation and Calibration & Forest Simulations: 
+========================================================================
+***Foundation,platforms and example with SIMANFOR***
+
+***Felipe Bravo & Cristóbal Ordóñez***
 
 
-calibration & Forest
+## SIMANFOR
+Growth and yield models at different scales are useful tools for forest stakeholders. Adequate simulation of forest stand conditions after different silvicultural scenarios allows stakeholders to adopt appropriate actions to maintain forest integrity while forest products and services are obtained to benefit society as a whole. 
 
+SIMANFOR is a platform to simulate sustainable forest management alternatives, integrating different modules to manage forest inventories, simulate and project stand conditions and maintain systems security and integrity. 
 
-Simulations: foundation,
+SIMANFOR output is compatible with an Office environment (Microsoft or Open), allowing users to exchange data and files between SIMANFOR and their own software. New developments are being planned under a web 2.0 environment to take advantage of user input to improve SIMANFOR in the future.
 
+## References
 
-platforms and example with
-
-
-SIMANFOR Felipe Bravo &
-
-
-Cristóbal Ordóñez
+* http://www.forcip.eu/sites/default/files/metting/attach/Simanfor_Sustainable%20Forest%20management%20simulator.pdf

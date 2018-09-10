@@ -1,0 +1,57 @@
+Reading and writing geospatial data in R
+=============================================
+### The raster and sp libraries
+The Forest Tools package is built on the raster and sp libraries, which are automatically installed when ForestTools is downloaded. These libraries define a variety of classes and functions for working with raster and vector datasets in R.
+It is recommended that any user performing geospatial analyses in R be familiar with both of these libraries. Relatively easy and straightforward guides for raster and sp have been written by their respective authors.
+
+### Geospatial classes used by Forest Tools
+* Data product
+* Data type
+* Object class
+* Canopy height model
+* Single-layer raster
+* RasterLayer
+* Treetops
+* Points
+* SpatialPointsDataFrame
+* Crown outlines
+* Polygons
+* RasterLayer, SpatialPolygonsDataFrame
+* Gridded statistics
+* Multi-layer raster
+* RasterLayer, RasterBrick
+
+
+### Raster files
+To load a raster file, such as a CHM, use the raster function from the ***raster*** library (both the function and the library have the same name). Simply provide a path to a valid raster file. Don’t forget to use either double backslashes \\ or forward slashes / in the file path.
+
+```{r}
+library(raster)
+
+# Load a canopy height model
+inCHM <- raster("C:\\myFiles\\inputs\\testCHM.tif")
+```
+Once you have performed your analysis, use the writeRaster function to save any raster files you have produced. 
+Setting an appropriate dataType is optional, but can save disk space.
+```{r}
+# Write a crown map raster file
+writeRaster(crowns, "C:\\myFiles\\outputs\\crowns.tif", dataType = "INT2U")
+```
+
+### Polygon and point files
+There are many options for saving point and polygon files to disk. The ***rgdal*** library provides functions for reading and writing the most common vector formats. The following examples use ESRI Shapefiles.
+Use the ```readOGR()`` function to load a polygonal ESRI Shapefile. Instead of providing an entire file path,``readOGR()`` takes two 
+separate arguments: the file’s directory, followed by the file name without an extension. 
+
+The following would import a file named ``“C:\myFiles\blockBoundaries\block375.shp”``.
+```{r}
+library(rgdal)
+
+# Load the 'block375.shp' file
+blk375boundary <- readOGR("C:\\myFiles\\blockBoundaries", "block375")
+```
+Follow this same convention for saving a vector file to disk using writeOGR. A driver must also be specified.
+```{r}
+# Save a set of dominant treetops
+writeOGR(ttops, "C:\\myFiles\\outputs", "treetops", driver = "ESRI Shapefile")
+```

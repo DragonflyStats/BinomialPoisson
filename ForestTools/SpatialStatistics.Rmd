@@ -1,0 +1,93 @@
+
+### Spatial statistics
+Managed forests are often divided into discrete spatial units. In British Columbia, for instance, these can range from cut blocks measuring a few hectares to timber supply areas, spanning several hundred square kilometers. The forest composition within these spatial units can be characterized through summarized statistics of tree attributes. For instance, a timber license holder may want a rough estimate of the number of dominant trees within a woodlot, while the standard deviation of tree height is of interest to anyone mapping heterogeneous old growth forest.
+The ``sp_summarise`` function can be used to count trees within a set of spatial units, as well as compute statistics of the trees’ attributes. These spatial units can be in the form of spatial polygons, or can be generated in the form of a raster grid.
+When no specific area is defined, sp_summarise will simply return the count of all inputted trees.
+```{r}
+sp_summarise(ttops)
+##           Value
+## TreeCount  1077
+```
+Tree crowns can also be used as input. By defining the variables argument, ``sp_summarise`` will generate summarized statistics of the trees’ attributes. By default, the mean, median, standard deviation, minimum and maximum are computed, but custom functions can also be used.
+```{r}
+sp_summarise(crownsPoly, variables = c("crownArea", "height"))
+##                       Value
+## TreeCount       1077.000000
+## crownAreaMean      7.454271
+## crownAreaMedian    6.250000
+## crownAreaSD        5.398044
+## crownAreaMin       0.250000
+## crownAreaMax      53.000000
+## heightMean         5.404217
+## heightMedian       4.487972
+## heightSD           2.969385
+## heightMin          2.002042
+## heightMax         13.491207
+```
+
+### Statistics by polygon
+* The Forest Tools package includes the boundaries of three cutting blocks that can be overlayed on ***kootenayCHM***. 
+* Tree counts and height statistics can be summarized within these boundaries using the areas argument.
+```{r}
+data("kootenayBlocks")
+
+# Compute tree count and height statistics for cut blocks
+blockStats <- sp_summarise(ttops, areas = kootenayBlocks, variables = "height")
+
+# Plot CHM
+plot(kootenayCHM, xlab = "", ylab = "", xaxt='n', yaxt = 'n')
+
+# Add block outlines to the plot
+plot(kootenayBlocks, add = TRUE, border =  "darkmagenta", lwd = 2)
+
+# Add tree counts to the plot
+library(rgeos)
+text(gCentroid(kootenayBlocks, byid = TRUE), blockStats[["TreeCount"]], col = "darkmagenta", font = 2)
+
+# View height statistics
+blockStats@data
+##   BlockID Shape_Leng Shape_Area TreeCount heightMean heightMedian heightSD
+## 0     101   304.3290   3706.389       300   7.538894     7.691572 2.587075
+## 1    3308   508.6240   6712.607       521   3.111031     2.771317 1.003606
+## 2     113   239.5202   2767.266       250   7.635933     8.180647 2.510343
+##   heightMin heightMax
+## 0  2.331073 13.491207
+## 1  2.002042  7.125149
+## 2  2.053920 12.583441
+```
+
+### Statistics by grid
+Instead of defining polygonal areas, the sp_summarise function can also generate counts and stastics in raster format. 
+In this case, the grid argument should be used instead of areas. 
+If you have an existing raster with the extent, cell size and alignment that you would like to use, it can be input as the grid argument. Otherwise, simply entering a numeric value will generate a raster with that cell size.
+
+```{r}
+# Compute tree count within a 10 m x 10 m cell grid
+gridCount <- sp_summarise(ttops, grid = 10)
+
+# Plot grid
+plot(gridCount, col = heat.colors(255), 
+  xlab = "", 
+  ylab = "", 
+  xaxt='n', 
+  yaxt = 'n')
+```
+If, in addition to tree count, tree attribute statistics are computed, the object returned by ``sp_summarise`` will be a RasterBrick, i.e.: a multi-layered raster.
+```{r}
+# Compute tree height statistics within a 10 m x 10 m cell grid
+gridStats <- sp_summarise(trees = ttops, grid = 10, variables = "height")
+
+# View layer names
+names(gridStats)
+## [1] "TreeCount"    "heightMean"   "heightMedian" "heightSD"    
+## [5] "heightMin"    "heightMax"
+```
+Use the ``[[]]`` subsetting operator to extract a single layer.
+```{r}
+# Plot mean tree height within 10 m x 10 m cell grid
+plot(gridStats[["heightMean"]], col = heat.colors(255),
+   xlab = "", 
+   ylab = "", 
+   xaxt='n', 
+   yaxt = 'n')
+```
